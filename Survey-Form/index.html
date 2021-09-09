@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<p id="description">Please fill this form<sup>*</sup> to let us know how we can improve  <span class="desc-foot"><sub><sup>*</sup>You can fill and submit this form<sub></span></p>
+	<form method="POST" action="https://formspree.io/amitsarangi44@gmail.com" id="survey-form">
+		<div>
+			<label for="name" id="name-label">Name:</label><br>
+			<input class="input-elm" type="text" name="name" id="name" required placeholder="Your Full Name">
+		</div>
+		<div>
+			<label for="email" id="email-label">Email:</label><br>
+			<input class="input-elm" type="email" name="email" id="email" required placeholder="Your Email ID">
+		</div>
+		<div>
+			<label for="number" id="number-label">Age:</label><br>
+			<input class="input-elm" type="number" name="age" id="number" max="40" min="18" placeholder="Your Age">
+		</div>
+		<div>
+			<label for="dropdown">Are you satisfied with the teaching staff and their teaching methods?</label><br>
+			<select class="select-elm" name="occupation" id="dropdown">
+				<option value="full_time_job">Extremely satisfied</option>
+				<option value="part_time_job">Very satisfied</option>
+				<option value="freelancer">Satisfied</option>
+				<option value="teacher">Neutral</option>
+				<option value="student">Dissatisfied</option>
+				<option value="no_say">Extremely dissatisfied</option>
+			</select>
+		</div>
+		<div>
+			<div> How satisfied are you with the facilities provided by the college?</div>
+			<ul>
+				<li class="list-items"><input class="input-elm input-radio" type="radio" name="likely" value="1" id="radio-1"> <label for="radio-1">Extremely satisfied</label></li>
+				<li class="list-items"><input class="input-elm input-radio" type="radio" name="likely" value="2" id="radio-2"> <label for="radio-2">Satisfied</label></li>
+				<li class="list-items"><input class="input-elm input-radio" type="radio" name="likely" value="3" id="radio-3"> <label for="radio-3">Neutral</label></li>
+				<li class="list-items"><input class="input-elm input-radio" type="radio" name="likely" value="4" id="radio-4"> <label for="radio-4">Dissatisfied</label></li>
+			</ul>
+		</div>
+		<div>
+			<div> Was it easy to obtain the necessary resources from the college library?</div>
+			<ul>
+				<li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements" value="html5" id="checkbox-1"> <label for="checkbox-1">Yes</label></li>
+				<li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements" value="css3" id="checkbox-2"> <label for="checkbox-2">No</label></li>
+				<!-- <li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements" value="js" id="checkbox-3"> <label for="checkbox-1">More JavaScript Challenges</label></li> -->
+			</ul>
+		</div>
+		<div>
+			<label for="more-improvements">List out all improvements you want to see in Survey Form:</label>
+			<textarea class="textarea-elm" name="improvements-list" id="more-improvements"></textarea>
+		</div>
+		<button class="button-elm" type="submit" id="submit">Submit Form</button>
+	</form>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
